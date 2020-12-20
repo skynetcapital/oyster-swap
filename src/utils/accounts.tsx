@@ -416,7 +416,7 @@ export function AccountsProvider({ children = null as any }) {
       setTokenAccounts([]);
     } else {
       // cache host accounts to avoid query during swap
-      precacheUserTokenAccounts(connection, SWAP_HOST_FEE_ADDRESS);
+      //precacheUserTokenAccounts(connection, publicKey);
 
       precacheUserTokenAccounts(connection, publicKey).then(() => {
         setTokenAccounts(selectUserAccounts());

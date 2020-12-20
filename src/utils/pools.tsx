@@ -255,7 +255,7 @@ export const swap = async (
   let hostFeeAccount = SWAP_HOST_FEE_ADDRESS
     ? findOrCreateAccountByMint(
         wallet.publicKey,
-        SWAP_HOST_FEE_ADDRESS,
+        wallet.publicKey,
         instructions,
         cleanupInstructions,
         accountRentExempt,
